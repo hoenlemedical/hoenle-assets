@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<defs>
+  <linearGradient id="iring" x1="0" y1="0" x2="1" y2="0.25">
+    <stop offset="0" stop-color="#e4e7eb"/>
+    <stop offset="0.45" stop-color="#9aa0a8"/>
+    <stop offset="1" stop-color="#5f646c"/>
+  </linearGradient>
+  <linearGradient id="iwave" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#c9cdd2"/>
+    <stop offset="0.5" stop-color="#9aa0a8"/>
+    <stop offset="1" stop-color="#5f646c"/>
+  </linearGradient>
+  <radialGradient id="ibody" cx="0.38" cy="0.32" r="0.8">
+    <stop offset="0" stop-color="#1d1f23"/>
+    <stop offset="1" stop-color="#0b0b0d"/>
+  </radialGradient>
+  <radialGradient id="ihl">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0.96"/>
+    <stop offset="0.45" stop-color="#eef0f2" stop-opacity="0.9"/>
+    <stop offset="1" stop-color="#eef0f2" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="ihl2">
+    <stop offset="0" stop-color="#9aa0a8" stop-opacity="0.95"/>
+    <stop offset="0.5" stop-color="#9aa0a8" stop-opacity="0.75"/>
+    <stop offset="1" stop-color="#9aa0a8" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="ishadow">
+    <stop offset="0" stop-color="#9aa0a8" stop-opacity="0.55"/>
+    <stop offset="0.7" stop-color="#9aa0a8" stop-opacity="0.25"/>
+    <stop offset="1" stop-color="#9aa0a8" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+  <rect width="1024" height="1024" fill="#0b0b0d"/>
+  <g transform="translate(133.12 133.12) scale(0.47360)">
+    <circle cx="800" cy="800" r="800" fill="url(#iring)"/>
+    <circle cx="788" cy="803" r="760" fill="url(#ibody)"/>
+    <ellipse cx="470" cy="470" rx="245" ry="250" fill="url(#ihl)"/>
+    <ellipse cx="1215" cy="480" rx="120" ry="330" transform="rotate(-38 1215 480)" fill="url(#ihl)"/>
+    <ellipse cx="385" cy="975" rx="130" ry="140" fill="url(#ihl2)"/>
+    <path fill="url(#iwave)" d="M240 1330 C 400 1450 640 1480 760 1440 C 880 1400 900 1290 960 1200
+      C 1040 1080 1160 1040 1300 1020 C 1400 1005 1450 1000 1500 930 C 1550 860 1560 760 1545 690
+      C 1560 760 1555 900 1520 980 C 1440 1160 1250 1300 1050 1400 C 820 1515 560 1500 385 1440 Z"/>
+  </g>
+</svg>
