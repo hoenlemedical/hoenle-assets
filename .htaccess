@@ -1,0 +1,8 @@
+# assets.hoenlemedical.com (All-Inkl)
+# Die digitale Beschilderung in Teams Rooms Pro laedt Quellen in einem iFrame
+# unter teams.microsoft.com. Microsoft verlangt, dass die Quelle das ausdruecklich
+# erlaubt (CSP frame-ancestors), sonst bleibt die Anzeige leer oder zeigt einen Fehler.
+# Angelegt 04.11.2026, Teams-Raum Starnberg.
+<IfModule mod_headers.c>
+  Header always set Content-Security-Policy "frame-ancestors 'self' https://teams.microsoft.com https://*.teams.microsoft.com https://*.office.com https://*.skype.com"
+</IfModule>
