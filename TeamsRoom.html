@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hoenle Medical – Konferenzraum</title>
+<!--
+  Digitale Beschilderung Teams-Raum Starnberg (Teams Rooms Pro Management,
+  Quelle "Default Signage"). Liegt neben TeamsRoom.png auf assets.hoenlemedical.com.
+  Die Beschilderung erwartet eine Webseite; die PNG-Adresse direkt ergab am
+  04.11.2026 "Page not found" am Gerät.
+  Bild tauschen: nur TeamsRoom.png ersetzen. Die Seite laedt es stuendlich neu.
+-->
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #102441; }
+  img { display: block; width: 100vw; height: 100vh; object-fit: cover; }
+</style>
+</head>
+<body>
+<img id="bild" src="TeamsRoom.png" alt="">
+<script>
+  // Stuendlich neu laden, damit ein getauschtes Bild ohne Neustart ankommt
+  setInterval(function () {
+    document.getElementById('bild').src = 'TeamsRoom.png?t=' + Date.now();
+  }, 3600000);
+</script>
+</body>
+</html>
