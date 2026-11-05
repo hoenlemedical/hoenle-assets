@@ -9,19 +9,21 @@
   Quelle "Default Signage"). Liegt neben TeamsRoom.png auf assets.hoenlemedical.com.
   Die Beschilderung erwartet eine Webseite; die PNG-Adresse direkt ergab am
   04.11.2026 "Page not found" am Gerät.
-  Bild tauschen: nur TeamsRoom.png ersetzen. Die Seite laedt es stuendlich neu.
+  Bild tauschen: nur TeamsRoom-4k.png ersetzen (3840x2160). Die Seite skaliert es auf jede
+  Anzeige; ein direkt verlinktes Bild zeigt Teams in Originalgroesse, ein 4K-Bild waere
+  auf einem 1080p-Schirm angeschnitten. Die Seite laedt es stuendlich neu.
 -->
 <style>
-  html, body { margin: 0; height: 100%; overflow: hidden; background: #102441; }
-  img { display: block; width: 100vw; height: 100vh; object-fit: cover; }
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #ebebeb; }
+  img { display: block; width: 100vw; height: 100vh; object-fit: contain; }
 </style>
 </head>
 <body>
-<img id="bild" src="TeamsRoom.png" alt="">
+<img id="bild" src="TeamsRoom-4k.png" alt="">
 <script>
   // Stuendlich neu laden, damit ein getauschtes Bild ohne Neustart ankommt
   setInterval(function () {
-    document.getElementById('bild').src = 'TeamsRoom.png?t=' + Date.now();
+    document.getElementById('bild').src = 'TeamsRoom-4k.png?t=' + Date.now();
   }, 3600000);
 </script>
 </body>
